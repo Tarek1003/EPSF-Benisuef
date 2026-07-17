@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function ContactForm() {
   const [result, setResult] = useState("");
@@ -10,7 +10,7 @@ export default function ContactForm() {
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: formData,
     });
 
     const data = await response.json();
@@ -18,53 +18,47 @@ export default function ContactForm() {
   };
 
   return (
+    <form
+      method='POST'
+      className='flex flex-col gap-5 text-black'
+      onSubmit={onSubmit}>
+      <div className='flex gap-2.5'>
+        <input
+          type='text'
+          name='firstName'
+          placeholder='First name'
+          className='bg-white placeholder:text-gray-400 rounded-sm p-4 max-sm:w-1/2'
+          required
+        />
 
-<form
-  method="POST"
-  className="flex flex-col gap-5 text-black"
-onSubmit={onSubmit}>
-  <div className="flex gap-2.5">
-    <input
-      type="text"
-      name="firstName"
-      placeholder="First name"
-      className="bg-white placeholder:text-gray-400 rounded-sm p-4 max-sm:w-1/2"
-      required
-    />
+        <input
+          type='text'
+          name='lastName'
+          placeholder='Second name'
+          className='bg-white placeholder:text-gray-400 rounded-sm p-4 max-sm:w-1/2'
+          required
+        />
+      </div>
 
-    <input
-      type="text"
-      name="lastName"
-      placeholder="Second name"
-      className="bg-white placeholder:text-gray-400 rounded-sm p-4 max-sm:w-1/2"
-      required
-    />
-  </div>
+      <input
+        type='email'
+        name='email'
+        placeholder='Email'
+        className='bg-white placeholder:text-gray-400 rounded-sm p-4 '
+        required
+      />
 
-  <input
-    type="email"
-    name="email"
-    placeholder="Email"
-    className="bg-white placeholder:text-gray-400 rounded-sm p-4 "
-    required
-  />
+      <textarea
+        name='message'
+        placeholder='Your inquiry'
+        className='bg-white placeholder:text-gray-400 rounded-sm p-4 h-40 resize-none'
+        required></textarea>
 
-  <textarea
-    name="message"
-    placeholder="Your inquiry"
-    className="bg-white placeholder:text-gray-400 rounded-sm p-4 h-40 resize-none"
-    required
-  ></textarea>
-
-  <button
-    type="submit"
-    className="bg-white text-primary px-6 py-3 rounded-lg hover:bg-gray-200"
-  >
-    Send
-  </button>
-
-</form> 
-
-
+      <button
+        type='submit'
+        className='bg-white text-primary px-6 py-3 rounded-lg hover:bg-gray-200'>
+        Send
+      </button>
+    </form>
   );
 }
