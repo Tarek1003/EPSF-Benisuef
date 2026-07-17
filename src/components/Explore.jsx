@@ -17,9 +17,9 @@ const Explore = () => {
           pharmacy students and graduates of the Faculty of Pharmacy at
           Beni-Suef University, up to four years after graduation.
         </div>
-        <div className='flex gap-10 max-sm:flex-col' data-aos='fade-down'>
-          <div className='flex-col flex gap-5 '>
-            <img src={syndicate} className='w-50 mx-auto rounded-full' />
+        <div className='flex gap-30 max-sm:flex-col' data-aos='fade-down'>
+          <div className='flex-col flex  justify-center items-center gap-5'>
+            <img src={syndicate} className='w-50 rounded-full' />
             <div className='text-center font-medium  sm:text-sm lg:text-base'>
               EPSF operates under the supervision of the General Syndicate of
               Pharmacists of Egypt, making our office part of a nationally
@@ -27,8 +27,8 @@ const Explore = () => {
               across Egypt.{" "}
             </div>
           </div>
-          <div className='flex-col flex gap-5 '>
-            <img src={epsfLogo} className='w-50 mx-auto rounded-full' />
+          <div className='flex-col flex  justify-center items-center gap-5 '>
+            <img src={epsfLogo} className='w-50  rounded-full' />
             <div className='text-center font-medium  sm:text-sm lg:text-base'>
               Our office operates under the direct supervision of the Egyptian
               Pharmaceutical Students' Federation (EPSF). We actively
@@ -36,8 +36,8 @@ const Explore = () => {
               country.
             </div>
           </div>
-          <div className='flex-col flex gap-5'>
-            <img src={emroLogo} className='w-50 mx-auto rounded-full' />
+          <div className='flex-col flex justify-center items-center gap-5'>
+            <img src={emroLogo} className='w-50  rounded-full' />
             <div className='text-center font-medium sm:text-sm lg:text-base'>
               As part of EPSF, we are connected to the International
               Pharmaceutical Students' Federation (IPSF) and its Eastern
