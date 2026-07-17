@@ -1,44 +1,53 @@
 import exploreMore from "../assets/exploreMore.jpeg";
-import legal from "../assets/legal.jpeg";
 import goals from "../assets/goals.jpeg";
+import syndicate from "../assets/syndicate.jpeg";
+import epsfLogo from "../assets/EPSF LOGO.jpeg"
+import emroLogo from "../assets/EMRO.jpeg"
 const Explore = () => {
   return (
-    <div className='px-4 sm:px-12 lg:px-24 xl:px-40 py-10 '>
-      <div>
-        <h2 className='font-extrabold pb-10 text-primary text-2xl '>
+    <div
+      className='px-4 sm:px-12 lg:px-24 xl:px-40 py-10 '
+      data-aos='fade-down'>
+      <div data-aos='fade-down'>
+        <h2 className='font-extrabold pb-5 text-primary text-3xl text-center  '>
           Legal Status
         </h2>
-        <div>
-          <img src={legal} className='w-2/3 mx-auto' />
+        <div className='text-center font-bold text-base pb-10'>
+          EPSF-BeniSuef is an independent student entity that brings together
+          pharmacy students and graduates of the Faculty of Pharmacy at
+          Beni-Suef University, up to four years after graduation.
         </div>
-
-        <ul className='pt-10 text-gray-700 font-medium text-xl'>
-          <li className='pb-2.5'>
-            EPSF-BeniSuef is an independent student entity that brings together
-            pharmacy students and graduates of the Faculty of Pharmacy at
-            Beni-Suef University, up to four years after graduation.
-          </li>
-          <li className='pb-2.5'>
-            Our office operates under the direct supervision of the Egyptian
-            Pharmaceutical Students' Federation (EPSF), which in turn works
-            under the supervision of the General Syndicate of Pharmacists of
-            Egypt. We actively participate in EPSF's activities and key events
-            across the country.
-          </li>
-          <li className='pb-2.5'>
-            As an active member of EPSF, we are part of a larger network: EPSF
-            is a full member of the International Pharmaceutical Students'
-            Federation (IPSF) and its Eastern Mediterranean Regional Office
-            (EMRO), connecting our students to a global pharmaceutical student
-            community.
-          </li>
-          <li className='pb-2.5'>
-            The Egyptian Pharmaceutical Students' Federation and its affiliated
-            offices operate independently and are not subject to the activities
-            or decisions of student unions within faculties of pharmacy.
-          </li>
-        </ul>
+        <div className='flex gap-10 max-sm:flex-col' data-aos='fade-down'>
+          <div className='flex-col flex gap-5 '>
+            <img src={syndicate} className='w-50 mx-auto rounded-full' />
+            <div className='text-center font-medium  sm:text-sm lg:text-base'>
+              EPSF operates under the supervision of the General Syndicate of
+              Pharmacists of Egypt, making our office part of a nationally
+              recognized professional structure that supports pharmacy students
+              across Egypt.{" "}
+            </div>
+          </div>
+          <div className='flex-col flex gap-5 '>
+            <img src={epsfLogo} className='w-50 mx-auto rounded-full' />
+            <div className='text-center font-medium  sm:text-sm lg:text-base'>
+              Our office operates under the direct supervision of the Egyptian
+              Pharmaceutical Students' Federation (EPSF). We actively
+              participate in EPSF's activities and major events across the
+              country.
+            </div>
+          </div>
+          <div className='flex-col flex gap-5'>
+            <img src={emroLogo} className='w-50 mx-auto rounded-full' />
+            <div className='text-center font-medium sm:text-sm lg:text-base'>
+              As part of EPSF, we are connected to the International
+              Pharmaceutical Students' Federation (IPSF) and its Eastern
+              Mediterranean Regional Office (EMRO), giving our members access to
+              a global pharmaceutical student network.{" "}
+            </div>
+          </div>
+        </div>
       </div>
+
       <div>
         <h2 className='font-extrabold pb-10 pt-10 text-primary text-2xl '>
           Our Foundations
