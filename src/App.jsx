@@ -11,6 +11,7 @@ import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import Events from "./components/Events";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -40,6 +41,7 @@ function App() {
             <>
               <Home />
               <AboutUs />
+              {/* <Events /> */}
               <Structure />
               <ContactUs />
             </>

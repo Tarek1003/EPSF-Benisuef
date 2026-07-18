@@ -1,5 +1,5 @@
 import exploreMore from "../assets/exploreMore.jpeg";
-import goals from "../assets/goals.jpeg";
+import goals from "../assets/goals.png";
 import syndicate from "../assets/syndicate.jpeg";
 import epsfLogo from "../assets/EPSF LOGO.jpeg"
 import emroLogo from "../assets/EMRO.jpeg"
@@ -25,7 +25,7 @@ const Explore = () => {
           and a wide range of publications and activities dedicated to pharmacy.
           It is a member of the Egyptian Pharmaceutical Students' Federation,
           which represents Egypt in the International Pharmaceutical Students'
-          Federation and its Eastern Mediterranean regional office.\+
+          Federation and its Eastern Mediterranean regional office.
         </div>
       </div>
       <div data-aos='fade-down' className='pb-20 '>
@@ -37,7 +37,7 @@ const Explore = () => {
           pharmacy students and graduates of the Faculty of Pharmacy at
           Beni-Suef University, up to four years after graduation.
         </div>
-        <div className='flex gap-30 max-sm:flex-col' data-aos='fade-down'>
+        <div className='flex gap-30 sm:flex-col md:flex-row max-sm:flex-col' data-aos='fade-down'>
           <div className='flex-col flex  justify-center items-center gap-5'>
             <img src={syndicate} className='w-50 rounded-full' />
             <div className='text-center font-medium  sm:text-sm lg:text-base'>
@@ -108,9 +108,9 @@ const Explore = () => {
           Our Goals
         </h2>
 
-        <div className='flex lg:flex-row-reverse max-sm:text-base md:text-lg max-sm:flex-col sm:flex-col md:flex-col justify-between'>
+        <div className='flex lg:flex-row-reverse max-sm:text-base md:text-lg max-sm:flex-col sm:flex-col md:flex-col items-center justify-center'>
           <div>
-            <img src={goals} className='w-150 m-auto ' data-aos='fade-left' />
+            <img src={goals} className='w-2/3  mx-auto ' data-aos='fade-left' />
           </div>
           <ul
             className=' font-medium md:text-lg max-sm:text-base list-disc '
