@@ -1,5 +1,6 @@
 import aboutus from "../assets/home.jpg";
 import { Link } from "react-router-dom";
+
 const AboutUs = () => {
   return (
     <div
@@ -10,7 +11,7 @@ const AboutUs = () => {
           <img src={aboutus} className='w-1000 py-10' data-aos='fade-down' />
         </div>
 
-        <div className='flex flex-col gap-5 max-sm:text-base md:text-xl'>
+        <div className='flex flex-col gap-5 max-sm:text-base md:text-lg'>
           <div data-aos='fade-left'>
             <h2 className='font-extrabold pb-1.5 text-2xl'>About us</h2>
             EPSF-Benisuef is a student organization dedicated to empowering

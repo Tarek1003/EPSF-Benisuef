@@ -20,7 +20,7 @@ const Footer = () => {
         <Link
           to='/'
           onClick={() => {
-            (setSidebar(false),
+            (
               window.scrollTo({ top: 0, behavior: "smooth" }));
           }}
           className='  hover:text-primary rounded-full text-base font-medium cursor-pointer  max-sm:text-white'
@@ -29,14 +29,12 @@ const Footer = () => {
         </Link>
         <Link
           to='/#About-us'
-          onClick={() => setSidebar(false)}
           className='  hover:text-primary rounded-full text-base font-medium cursor-pointer'
           href='#About-us'>
           About us
         </Link>
         <Link
           to='/#Structure'
-          onClick={() => setSidebar(false)}
           className='hover:text-primary rounded-full text-base font-medium cursor-pointer'
           href='#Structure'>
           Structure
@@ -44,7 +42,7 @@ const Footer = () => {
         <Link
           to='/history'
           onClick={() => {
-            (setSidebar(false),
+            (
               window.scrollTo({ top: 0, behavior: "smooth" }));
           }}
           className='hover:text-primary  rounded-full text-base font-medium cursor-pointer '
@@ -53,7 +51,6 @@ const Footer = () => {
         </Link>
         <Link
           to='/#Contact-us'
-          onClick={() => setSidebar(false)}
           className='hover:text-primary  rounded-full text-base font-medium cursor-pointer '
           href='#Contact-us'>
           Contact us

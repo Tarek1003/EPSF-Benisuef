@@ -3,12 +3,32 @@ import goals from "../assets/goals.jpeg";
 import syndicate from "../assets/syndicate.jpeg";
 import epsfLogo from "../assets/EPSF LOGO.jpeg"
 import emroLogo from "../assets/EMRO.jpeg"
+import logo from "../assets/logo.jpg";
+import puzzle from "../assets/puzzle.jpeg"
 const Explore = () => {
   return (
-    <div
-      className='px-4 sm:px-12 lg:px-24 xl:px-40 py-10 '
-      data-aos='fade-down'>
-      <div data-aos='fade-down'>
+    <div className='px-4 sm:px-12 lg:px-24 xl:px-40 py-10 '>
+      <div className=''>
+        <img
+          src={logo}
+          className='rounded-full mx-auto w-1/4'
+          data-aos='fade-down'
+        />
+        <div
+          className='mx-auto mt-7 font-bold text-center text-xl max-sm:text-sm border-b-2 border-gray-400 pb-10 mb-10'
+          data-aos='fade-down'>
+          {" "}
+          "EPSF-BeniSuef (Egyptian Pharmaceutical Students' Federation – Beni
+          Suef University) is a non-governmental, non-political, non-religious
+          national organization leading the call among pharmacy students to
+          improve public health, through information, education, communication,
+          and a wide range of publications and activities dedicated to pharmacy.
+          It is a member of the Egyptian Pharmaceutical Students' Federation,
+          which represents Egypt in the International Pharmaceutical Students'
+          Federation and its Eastern Mediterranean regional office.\+
+        </div>
+      </div>
+      <div data-aos='fade-down' className='pb-20 '>
         <h2 className='font-extrabold pb-5 text-primary text-3xl text-center  '>
           Legal Status
         </h2>
@@ -48,85 +68,83 @@ const Explore = () => {
         </div>
       </div>
 
-      <div>
-        <h2 className='font-extrabold pb-10 pt-10 text-primary text-2xl '>
+      <div className='pb-20'>
+        <h2 className='font-extrabold pb-5 text-primary text-3xl text-center  '>
           Our Foundations
         </h2>
-        <div>
-          <img src={exploreMore} className='w-2/3 mx-auto' />
-        </div>
+        <div className='flex lg:flex-row-reverse max-sm:text-base md:text-lg max-sm:flex-col sm:flex-col md:flex-col'>
+          <div>
+            <img src={puzzle} className='w-2/3 mx-auto' data-aos='fade-left' />
+          </div>
 
-        <ul className='pt-10 text-gray-700 font-medium text-xl'>
-          <li className='pb-2.5'>
-            Everything we do is rooted in science, culture, and social impact.
-            EPSF-BeniSuef holds no political or religious affiliation, whether
-            inside or outside the university campus, and proudly stands as a
-            smoke-free organization.
-          </li>
-          <li className='pb-2.5'>
-            We work to achieve our goals free from any racial, political, or
-            religious discrimination.
-          </li>
-          <li className='pb-2.5'>
-            We maintain close and collaborative relationships with the Students'
-            Association and the Egyptian Pharmaceutical Students' Union,
-            operating in line with the Union's bylaws.
-          </li>
-          <li className='pb-2.5'>
-            Our office is guided by a strategic plan developed by the board and
-            members, driven by clear Key Performance Indicators (KPIs) that are
-            reviewed and approved by the General Assembly.
-          </li>
-        </ul>
+          <ul
+            className=' font-medium md:text-lg max-sm:text-base list-disc'
+            data-aos='fade-right'>
+            <li className='pb-2.5'>
+              Everything we do is rooted in science, culture, and social impact.
+              EPSF-BeniSuef holds no political or religious affiliation, whether
+              inside or outside the university campus, and proudly stands as a
+              smoke-free organization.
+            </li>
+            <li className='pb-2.5'>
+              We work to achieve our goals free from any racial, political, or
+              religious discrimination.
+            </li>
+            <li className='pb-2.5'>
+              We maintain close and collaborative relationships with the
+              Students' Association and the Egyptian Pharmaceutical Students'
+              Union, operating in line with the Union's bylaws.
+            </li>
+            <li className='pb-2.5'>
+              Our office is guided by a strategic plan developed by the board
+              and members, driven by clear Key Performance Indicators (KPIs)
+              that are reviewed and approved by the General Assembly.
+            </li>
+          </ul>
+        </div>
       </div>
       <div>
-        <h2 className='font-extrabold pb-10 pt-10 text-primary text-2xl '>
+        <h2 className='font-extrabold pb-5 text-primary text-3xl text-center  '>
           Our Goals
         </h2>
-        <div>
-          <img src={goals} className='w-2/3 mx-auto' />
-        </div>
 
-        <ul className='pt-10 text-gray-700 font-medium text-xl'>
-          <li className='pb-2.5'>
-            Empowering Students — We give pharmacy students the platform to
-            engage in scientific, cultural, and social activities.
-          </li>
-          <li className='pb-2.5'>
-            Raising Standards — We work to elevate the scientific and cultural
-            level of both our members and pharmacy students at large.
-          </li>
-          <li className='pb-2.5'>
-            Building Connections — We strengthen ties between pharmacy students
-            across different universities, creating space to exchange
-            perspectives on topics that matter to them.
-          </li>
-          <li className='pb-2.5'>
-            Global Exchange — Through IPSF's international student exchange
-            program, we open doors for our students to train abroad, while
-            welcoming international students to Egypt. This exchange fosters the
-            sharing of expertise, culture, and ideas around pharmaceutical
-            issues, and builds valuable cross-cultural experience.
-          </li>
-          <li className='pb-2.5'>
-            Knowledge Sharing — We organize local and regional seminars and
-            conferences that bring together diverse perspectives and elevate the
-            academic level of students.
-          </li>
-          <li className='pb-2.5'>
-            Strategic Partnerships — We seek out collaborative opportunities
-            with other organizations that align with and support our vision and
-            mission.
-          </li>
-          <li className='pb-2.5'>
-            Community Impact — We are committed to community service through:
-            <br></br>- Humanitarian projects that address real community needs
-            and fulfill our social responsibility.<br></br>- Spreading health,
-            cultural, and scientific awareness through the role of the
-            pharmacist, launching projects and campaigns that reflect our
-            commitment to the community.
-          </li>
-        </ul>
+        <div className='flex lg:flex-row-reverse max-sm:text-base md:text-lg max-sm:flex-col sm:flex-col md:flex-col justify-between'>
+          <div>
+            <img src={goals} className='w-150 m-auto ' data-aos='fade-left' />
+          </div>
+          <ul
+            className=' font-medium md:text-lg max-sm:text-base list-disc '
+            data-aos='fade-right'>
+            <li className='pb-2.5'>
+              <strong>Empowering Students</strong> Supporting pharmacy students
+              through scientific, cultural, and social activities.
+            </li>
+            <li className='pb-2.5'>
+              <strong>Raising Standards</strong> Enhancing the scientific and
+              professional level of pharmacy students.
+            </li>
+            <li className='pb-2.5'>
+              <strong>Building Connections</strong> Strengthening collaboration
+              among pharmacy students across universities.
+            </li>
+            <li className='pb-2.5'>
+              <strong>Global Exchange</strong> Providing international training
+              and cultural exchange opportunities through IPSF.
+            </li>
+            <li className='pb-2.5'>
+              <strong>Knowledge Sharing</strong> Organizing seminars and
+              conferences to enrich student learning.
+            </li>
+            <li className='pb-2.5'>
+              <strong>Strategic Partnerships</strong> Collaborating with
+              organizations that support our mission.
+            </li>
+            <li className='pb-2.5'>
+              <strong>Community Impact</strong> Promoting health awareness and
+              serving the community through meaningful initiatives.
+            </li>{" "}
+          </ul>
+        </div>
       </div>
     </div>
   );
