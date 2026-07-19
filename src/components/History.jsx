@@ -19,7 +19,7 @@ const History = () => {
           <div className='flex gap-8 flex-wrap justify-center items-center '>
             {epsfHistory.map((e) => (
               <button
-                className='block w-25 h-15 text-medium rounded-full  border-2 border-primary hover:bg-primary hover:text-white'
+                className='block w-25 h-15 text-medium rounded-full  border-2 border-primary hover:bg-primary hover:text-white' key={e.id}
                 onClick={() => setSelected(e)}>
                 {e.date}
               </button>

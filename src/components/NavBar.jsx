@@ -13,7 +13,11 @@ const NavBar = () => {
       </div>
 
       <div
-        className={`flex gap-2.5 ${!sideBar ? " max-sm:w-0 max-sm:overflow-hidden" : "max-sm:w-60 max-sm:flex-col max-sm:bg-primary max-sm:min-h-screen max-sm:h-full max-sm:fixed right-0 bottom-0 top-0 max-sm:text-white max-sm:pt-5 max-sm:pl-5 "}`}>
+        className={`flex gap-2.5 transition-all duration-300 ease-in-out
+    max-sm:flex-col max-sm:bg-primary max-sm:min-h-screen
+    max-sm:fixed max-sm:right-0 max-sm:bottom-0 max-sm:top-0
+    max-sm:text-white max-sm:pt-5  max-sm:overflow-hidden
+    ${sideBar ? "max-sm:w-60 max-sm:pl-5" : "max-sm:w-0 max-sm:pl-0"}`}>
         {sideBar && (
           <IoClose
             className='sm:hidden w-12 text-3xl font-bold text-white fixed right-2 '
@@ -27,7 +31,7 @@ const NavBar = () => {
             (setSidebar(false),
               window.scrollTo({ top: 0, behavior: "smooth" }));
           }}
-          className='hover:bg-primary p-2.5 hover:text-white rounded-full text-base font-medium cursor-pointer text-gray-700 max-sm:text-white'
+          className='hover:bg-primary max-sm:mt-8 p-2.5 hover:text-white rounded-full text-base font-medium cursor-pointer text-gray-700 max-sm:text-white'
           href='#'>
           Home
         </Link>
