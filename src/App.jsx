@@ -41,7 +41,7 @@ function App() {
             <>
               <Home />
               <AboutUs />
-              {/* <Events /> */}
+              <Events />
               <Structure />
               <ContactUs />
             </>

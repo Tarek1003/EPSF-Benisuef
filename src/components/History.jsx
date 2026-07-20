@@ -25,7 +25,7 @@ const History = () => {
               </button>
             ))}
           </div>
-          <div className='text-center font font-medium text-2xl border-2 border-primary mt-10 p-7 rounded-2xl bg-white shadow-2xl'>
+          <div className='text-center font font-medium md:text-lg max-sm:text-base border-2 border-primary mt-10 p-7 rounded-2xl bg-white shadow-2xl'>
             <h2 className='font-bold'>{selected.title}</h2>
             <div className='text-primary mb-3.5'>{selected.date}</div>
             <div>{selected.description}</div>
