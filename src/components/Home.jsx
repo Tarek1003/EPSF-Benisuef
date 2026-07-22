@@ -21,7 +21,7 @@ const Home = () => {
         <div
           className='p-[1px] bg-gradient-to-r from-primary to-white rounded-2xl transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110'
           data-aos='fade-right'>
-          <div className=' block w-40 h-20  shadow-2xl rounded-2xl  bg-white flex justify-center items-center '>
+          <div className='  w-40 h-20  shadow-2xl rounded-2xl  bg-white flex justify-center items-center '>
             +100 Members
           </div>
         </div>

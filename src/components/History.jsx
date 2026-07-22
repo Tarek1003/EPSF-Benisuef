@@ -7,7 +7,7 @@ const History = () => {
     <div>
       <div className='relative w-full'>
         <img src={history} className='w-full h-auto ' alt='' />
-        <div className='text-white md:font-extrabold sm:font-bold lg:text-3xl md:text-2xl sm:text-xl max-sm:text-sm text-center absolute inset-0 p-8 flex items-center justify-center'>
+        <div className='text-primary md:leading-12 md:font-extrabold max-sm:font-extrabold lg:text-3xl md:text-2xl sm:text-xl max-sm:text-sm text-center absolute inset-0 p-8 flex items-center justify-center'>
           "As you read these words, feel the weight and the grandeur of every
           single moment gathered here, drawn from everyone who has ever been
           part of this entity and who helped carry it to where it stands today.
@@ -19,7 +19,7 @@ const History = () => {
           <div className='flex gap-8 flex-wrap justify-center items-center '>
             {epsfHistory.map((e) => (
               <button
-                className='block w-25 h-15 text-medium rounded-full  border-2 border-primary hover:bg-primary hover:text-white' key={e.id}
+                className='block w-25 h-15 text-medium font-semibold rounded-full text-primary bg-white shadow-2xl hover:bg-primary hover:text-white' key={e.id}
                 onClick={() => setSelected(e)}>
                 {e.date}
               </button>
